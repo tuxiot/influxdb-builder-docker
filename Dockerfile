@@ -53,11 +53,3 @@ EXPOSE 8086
 
 ENTRYPOINT [ "/usr/bin/influxd" ]
 
-# ##
-# # InfluxDB UI Image
-# ##
-# FROM nginx:alpine AS ui
-
-# EXPOSE 80
-
-# COPY --from=dbuild-all /code/ui/build /usr/share/nginx/html
